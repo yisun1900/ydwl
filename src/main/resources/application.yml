@@ -1,0 +1,17 @@
+server:
+  port: 8086
+---
+spring:
+  profiles: default
+
+logging:
+  level:
+    org.springframework.web: DEBUG
+
+---
+spring:
+  profiles: real
+
+logging:
+  level:
+    org.springframework.web: ERROR
